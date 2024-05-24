@@ -3,7 +3,7 @@ export default {
     data() {
         return {
             links: ["Characters", "Comics", "Movies", "TV", "Characters", "Games", "Collectibles", "Videos", "Fans", "News", "Shop"],
-            logo: ["dc-logo.png"]
+            logo: ["/public/img/dc-logo.png"]
         }
     }
 }
@@ -16,11 +16,12 @@ export default {
                 <div class="col-5">
                     <img :src="logo[0]" alt="DC Logo">
                 </div>
-                <div class="col-7">
+                <div class="col-7 p-4">
                     <ul class="horizontal-links">
                         <li v-for="link in links" :key="link">
                             {{ link }}
                         </li>
+                    
                     </ul>
                 </div>
             </div>
@@ -30,7 +31,7 @@ export default {
 
 <style scoped>
 header {
-    height: 3rem;
+    height: 100%;
     padding: 1rem;
     max-width: 80%;
     background-color: white;
@@ -42,6 +43,7 @@ header {
     padding: 0;
     margin: 0;
     display: flex; 
+    align-items: center;
 }
 
 .horizontal-links li {

@@ -18,7 +18,6 @@ import AppFooter from './components/AppFooter.vue'
 #app {
     display: flex;
     flex-direction: column;
-    align-items: start;  
-     
+
 }
 </style>
