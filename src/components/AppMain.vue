@@ -15,9 +15,5 @@ export default {
 </template>
 
 <style scoped>
-main {
-    background-color: #eee;
-    padding: 1rem;
-    text-align: center;
-}
+
 </style>
