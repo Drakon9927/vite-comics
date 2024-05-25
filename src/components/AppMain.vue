@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-            message: "Benvenuto nella sezione principale"
+            message: "Content here"
         }
     }
 }

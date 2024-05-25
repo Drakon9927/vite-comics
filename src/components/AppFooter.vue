@@ -34,7 +34,7 @@ export default {
 
 <template>
     <footer>
-        <div class="container-fluid w-100">
+        <div class="container-fluid w-100 bgblue">
             <div class="col-12">
                 <div class="d-flex row g-0 cicle1">
                     <div class="link-item" v-for="link in links" :key="link.title">
@@ -44,6 +44,66 @@ export default {
                 </div>
             </div>
         </div>
+
+        <div class="container-fluid w-100 bgimage p-5">
+            <div class="d-flex row g-0">
+                <div class="col-2">
+                    
+                    <ul>
+                        <li><h3 class="text-white">DC COMICS</h3></li>
+                        <li>Characters</li>
+                        <li>Comics</li>
+                        <li>Movies</li>
+                        <li>TV</li>
+                        <li>Games</li>
+                        <li>Videos</li>
+                        <li>News</li>
+                    </ul>
+
+                    
+
+                    <ul>
+                        <li><h3 class="text-white">SHOP</h3></li>
+                        <li>Shop DC</li>
+                        <li>Shop Collectibles</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-2 ">
+                    
+
+                    <ul>
+                        <li><h3 class="text-white">DC</h3></li>
+                        <li>Terms of Use</li>
+                        <li>Privacy policy (New)</li>
+                        <li>Ad Choices</li>
+                        <li>Advertising</li>
+                        <li>Jobs</li>
+                        <li>Subscription</li>
+                        <li>Talent Workshops</li>
+                        <li>CPSC Certificates</li>
+                        <li>Ratings</li>
+                        <li>Shop Help</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+
+                <div class="col-2">
+                    <ul>
+                        <li><h3 class="text-white">SITES</h3></li>
+                        <li>DC</li>
+                        <li>Mad Magazine</li>
+                        <li>DC Kids</li>
+                        <li>DC Universe</li>
+                        <li>DC Power Visa</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
     </footer>
 </template>
 
@@ -52,7 +112,7 @@ footer {
     color: white;
 }
 
-footer>.container-fluid {
+footer>.bgblue {
     background-color: #0282F9;
 }
 
@@ -82,5 +142,30 @@ footer>.container-fluid {
 
 .link-item p {
     margin-left: 10px; 
+}
+
+/* 2° CONTENITORE */
+
+.bgimage{
+    background-image: url(/public/img/footer-bg.jpg);
+    height: 40vh;
+
+}
+
+li{
+    color: grey;
+    margin-left: 35px;
+    list-style-type: none;
+}
+
+ul{
+    padding: 0;
+    
+}
+
+.d-flex{
+    justify-content: center;
+    align-items: start;
+    padding: 15px;
 }
 </style>
